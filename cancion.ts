@@ -28,16 +28,16 @@ class Cancion {
     }
   }
   
-  // Crear una única instancia del controlador y la vista
+  
   const vistaGlobal = new ListaCancionesView();
   const controladorGlobal = new ListaCancionesController(vistaGlobal);
   
-  // Crear 3 objetos de canciones
+  
   const cancion1 = new Cancion("Canción 1", "Artista 1");
   const cancion2 = new Cancion("Canción 2", "Artista 2");
   const cancion3 = new Cancion("Canción 3", "Artista 3");
   
-  // Agregar canciones a través del controlador
+  
   controladorGlobal.agregarCancion(cancion1);
   controladorGlobal.agregarCancion(cancion2);
   controladorGlobal.agregarCancion(cancion3);
